@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/opcioJoc"
+        android:icon="@drawable/ic_launcher_foreground"
+        app:showAsAction="ifRoom|withText"
+        android:title="Joc"
+        android:clickable="true"
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/Solid"
+        app:showAsAction="never"
+        android:title="Solids">
+    </item>
+
+    <item
+        android:id="@+id/itemLiquid"
+        app:showAsAction="never"
+        android:title="Liquids">
+
+    </item>
+
+    <item
+        android:id="@+id/Gasos"
+        app:showAsAction="never"
+        android:title="Gasos">
+    </item>
+
+    <item
+        android:id="@+id/Sintetic"
+        app:showAsAction="never"
+        android:title="Sintetics">
+    </item>
+
+</menu>
