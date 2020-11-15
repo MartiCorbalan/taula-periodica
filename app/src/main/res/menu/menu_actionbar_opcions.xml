@@ -6,7 +6,7 @@
         android:id="@+id/opcioJoc"
         android:icon="@drawable/ic_launcher_foreground"
         app:showAsAction="ifRoom|withText"
-        android:title="Joc"
+        android:title=""
         android:clickable="true"
         >
 

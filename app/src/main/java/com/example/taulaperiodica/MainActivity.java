@@ -65,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
             new elements(MetallTrans, solid, "Co", "27", "Cobalto", "58,93", "https://es.wikipedia.org/wiki/Cobalto"),
             new elements(MetallTrans, solid, "Cu", "29", "Cobre", "63,54", "https://es.wikipedia.org/wiki/Cobre"),
             new elements(MetallTrans, solid, "Cn", "112", "Copernicio", "285", "https://es.wikipedia.org/wiki/Copernicio"),
-            //25 segundos
             new elements(MetallTrans, solid, "Cr", "24", "Cromo", "51,9962", "https://es.wikipedia.org/wiki/Cromo"),
             new elements(actinidis, Sintetics, "Cm", "96", "Curio", "247", "https://es.wikipedia.org/wiki/Curio"),
             new elements(MetallTrans, Sintetics, "Ds", "110", "Darmstadio", "271", "https://es.wikipedia.org/wiki/Darmstadio"),
@@ -91,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
             new elements(noMetalls, Gasos, "H", "1", "Hidrogeno", "1,00794", "https://es.wikipedia.org/wiki/Hidrogeno"),
             new elements(MetallTrans, solid, "Fe", "26", "Hierro", "55,845", "https://es.wikipedia.org/wiki/Hierro"),
             new elements(lantanids, solid, "Ho", "67", "Holmio", "164,9303", "https://es.wikipedia.org/wiki/Holmio"),
-            //25 terceros
             new elements(metallsBlocP, solid, "In", "49", "Indio", "114,82", "https://es.wikipedia.org/wiki/Indio"),
             new elements(halogens, solid, "I", "53", "Iodo", "126,904", "https://es.wikipedia.org/wiki/Iodo"),
             new elements(MetallTrans, solid, "Ir", "77", "Iridio", "192,2", "https://es.wikipedia.org/wiki/Iridio"),
@@ -118,7 +116,6 @@ public class MainActivity extends AppCompatActivity {
             new elements(MetallTrans, solid, "Ni", "28", "Niquel", "58,71", "https://es.wikipedia.org/wiki/Niquel"),
             new elements(noMetalls, Gasos, "N", "7", "Nitrogen", "14,0067", "https://es.wikipedia.org/wiki/Nitrogeno"),
             new elements(actinidis, Sintetics, "No", "102", "Nobelio", "259", "https://es.wikipedia.org/wiki/Nobelio"),
-            //25 ultims
             new elements(gasNoble, Gasos, "Og", "118", "Oganesón", "286", "https://es.wikipedia.org/wiki/Oganesón"),
             new elements(MetallTrans, solid, "Au", "79", "Oro", "196,967", "https://es.wikipedia.org/wiki/Oro"),
             new elements(noMetalls, Gasos, "O", "8", "Oxígeno", "15,99994", "https://es.wikipedia.org/wiki/Oxígeno"),
@@ -298,7 +295,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.listopcions);
+        setContentView(R.layout.list);
 
         opcioJoc=(ImageView) findViewById(R.id.opcioJoc);
 
@@ -368,7 +365,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         public AdaptadorElements(Context context, elements[] elements) {
-            super(context, R.layout.listopcions, elements);
+            super(context, R.layout.activity_info_elemetns, elements);
         }
 
         public View getView(int position, View convertView, ViewGroup parent) {
@@ -379,13 +376,13 @@ public class MainActivity extends AppCompatActivity {
             TextView lblNom = (TextView) item.findViewById(R.id.edtNom);
             lblNom.setText(elements[position].getNom());
 
-            TextView lblSimbol = (TextView) item.findViewById(R.id.edtSimbol);
+            TextView lblSimbol = (TextView) item.findViewById(R.id.Simbol);
             lblSimbol.setText(elements[position].getSimbol());
 
-            TextView lblNum = (TextView) item.findViewById(R.id.edtNum);
+            TextView lblNum = (TextView) item.findViewById(R.id.Numero);
             lblNum.setText(elements[position].getNúmero());
 
-            TextView lblPes = (TextView) item.findViewById(R.id.edtPes);
+            TextView lblPes = (TextView) item.findViewById(R.id.Pes);
             lblPes.setText(elements[position].getPes());
 
 
@@ -497,13 +494,13 @@ public class MainActivity extends AppCompatActivity {
             TextView lblNom = (TextView) item.findViewById(R.id.edtNom);
             lblNom.setText(liquids[position].getNom());
 
-            TextView lblSimbol = (TextView) item.findViewById(R.id.edtSimbol);
+            TextView lblSimbol = (TextView) item.findViewById(R.id.Simbol);
             lblSimbol.setText(liquids[position].getSimbol());
 
-            TextView lblNum = (TextView) item.findViewById(R.id.edtNum);
+            TextView lblNum = (TextView) item.findViewById(R.id.Numero);
             lblNum.setText(liquids[position].getNúmero());
 
-            TextView lblPes = (TextView) item.findViewById(R.id.edtPes);
+            TextView lblPes = (TextView) item.findViewById(R.id.Pes);
             lblPes.setText(liquids[position].getPes());
 
 
@@ -564,13 +561,13 @@ public class MainActivity extends AppCompatActivity {
             TextView lblNom = (TextView) item.findViewById(R.id.edtNom);
             lblNom.setText(solids[position].getNom());
 
-            TextView lblSimbol = (TextView) item.findViewById(R.id.edtSimbol);
+            TextView lblSimbol = (TextView) item.findViewById(R.id.Simbol);
             lblSimbol.setText(solids[position].getSimbol());
 
-            TextView lblNum = (TextView) item.findViewById(R.id.edtNum);
+            TextView lblNum = (TextView) item.findViewById(R.id.Numero);
             lblNum.setText(solids[position].getNúmero());
 
-            TextView lblPes = (TextView) item.findViewById(R.id.edtPes);
+            TextView lblPes = (TextView) item.findViewById(R.id.Pes);
             lblPes.setText(solids[position].getPes());
 
 
@@ -630,13 +627,13 @@ public class MainActivity extends AppCompatActivity {
             TextView lblNom = (TextView) item.findViewById(R.id.edtNom);
             lblNom.setText(gasos[position].getNom());
 
-            TextView lblSimbol = (TextView) item.findViewById(R.id.edtSimbol);
+            TextView lblSimbol = (TextView) item.findViewById(R.id.Simbol);
             lblSimbol.setText(gasos[position].getSimbol());
 
-            TextView lblNum = (TextView) item.findViewById(R.id.edtNum);
+            TextView lblNum = (TextView) item.findViewById(R.id.Numero);
             lblNum.setText(gasos[position].getNúmero());
 
-            TextView lblPes = (TextView) item.findViewById(R.id.edtPes);
+            TextView lblPes = (TextView) item.findViewById(R.id.Pes);
             lblPes.setText(gasos[position].getPes());
 
 
@@ -698,13 +695,13 @@ public class MainActivity extends AppCompatActivity {
             TextView lblNom = (TextView) item.findViewById(R.id.edtNom);
             lblNom.setText(sintetics[position].getNom());
 
-            TextView lblSimbol = (TextView) item.findViewById(R.id.edtSimbol);
+            TextView lblSimbol = (TextView) item.findViewById(R.id.Simbol);
             lblSimbol.setText(sintetics[position].getSimbol());
 
-            TextView lblNum = (TextView) item.findViewById(R.id.edtNum);
+            TextView lblNum = (TextView) item.findViewById(R.id.Numero);
             lblNum.setText(sintetics[position].getNúmero());
 
-            TextView lblPes = (TextView) item.findViewById(R.id.edtPes);
+            TextView lblPes = (TextView) item.findViewById(R.id.Pes);
             lblPes.setText(sintetics[position].getPes());
 
 

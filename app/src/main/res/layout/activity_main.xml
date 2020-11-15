@@ -7,7 +7,7 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/edtNum"
+        android:id="@+id/Numero"
         android:text="NÚMERO"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -18,7 +18,7 @@
         android:gravity="center_horizontal" />
 
     <TextView
-        android:id="@+id/edtSimbol"
+        android:id="@+id/Simbol"
         android:textAlignment="center"
         android:text="SIMBOL"
         android:textSize="20sp"
@@ -27,7 +27,7 @@
         android:gravity="center_horizontal" />
 
     <TextView
-        android:id="@+id/edtPes"
+        android:id="@+id/Pes"
         android:text="PES"
         android:textAlignment="center"
         android:textSize="20sp"
