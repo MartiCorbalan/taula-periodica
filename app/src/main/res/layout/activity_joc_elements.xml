@@ -18,8 +18,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -49,46 +51,46 @@
             android:layout_width="match_parent"
             android:layout_height="28dp" />
 
-        <RadioButton
-            android:id="@+id/resp1"
+        <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="" />
+            android:layout_height="241dp">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="28dp" />
+            <RadioButton
+                android:id="@+id/resp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
 
-        <RadioButton
-            android:id="@+id/resp2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="28dp" />
+            <RadioButton
+                android:id="@+id/resp2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
 
-        <RadioButton
-            android:id="@+id/resp3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="28dp" />
+            <RadioButton
+                android:id="@+id/resp3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="28dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
 
-        <Button
-            android:id="@+id/btncorretgir"
-            android:layout_width="186dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="RESPONDRE" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="corretgir" />
+        </RadioGroup>
 
 
     </LinearLayout>

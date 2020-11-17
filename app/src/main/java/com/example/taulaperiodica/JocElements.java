@@ -17,5 +17,21 @@ public class JocElements extends AppCompatActivity {
         enunciat = findViewById(R.id.textEnunciat);
 
 
+
+
+    }
+
+    public void preguntes(){
+        int respuesta = (int) (Math.random()*116+0);
+        int Inrepetitivo = (int) (Math.random()*3+0);
+
+        String enunciat2 = "sel·lecciona el símbol d'aquest element:" + MainActivity.elements[respuesta].getNom();
+
+
+
+
+
+
+
     }
 }

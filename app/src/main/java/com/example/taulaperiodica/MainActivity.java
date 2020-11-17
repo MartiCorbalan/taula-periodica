@@ -22,24 +22,24 @@ import java.lang.reflect.Array;
 
 public class MainActivity extends AppCompatActivity {
 
-    final String solid = "solid";
-    final String liquid = "liquid";
-    final String Gasos = "gasos";
-    final String Sintetics = "sintetics";
-    final String MetallTrans = "Metall_Transicio";
-    final String metallAlc = "Metall_Alcalins";
-    final String alcalinoterris = "Alcalinoterris";
-    final String lantanids = "Lantanids";
-    final String actinidis = "Actinidis";
-    final String metallsBlocP = "Metalls_bloc_p";
-    final String Metaloidess = "Metaloides";
-    final String noMetalls = "No_metalls";
-    final String halogens = "Halogens";
-    final String gasNoble = "Gasos_nobles";
+    static final String solid = "solid";
+    static  final String liquid = "liquid";
+    static  final String Gasos = "gasos";
+    static   final String Sintetics = "sintetics";
+    static  final String MetallTrans = "Metall_Transicio";
+    static  final String metallAlc = "Metall_Alcalins";
+    static  final String alcalinoterris = "Alcalinoterris";
+    static  final String lantanids = "Lantanids";
+    static  final String actinidis = "Actinidis";
+    static  final String metallsBlocP = "Metalls_bloc_p";
+    static  final String Metaloidess = "Metaloides";
+    static  final String noMetalls = "No_metalls";
+    static  final String halogens = "Halogens";
+    static  final String gasNoble = "Gasos_nobles";
 
     ImageView opcioJoc;
 
-    private elements[] elements = new elements[]{
+    public static elements[] elements = new elements[]{
             new elements(actinidis, solid, "Ac", "89", "Actinio", "10.070", "https://es.wikipedia.org/wiki/Actinio"),
             new elements(metallsBlocP, solid, "Al", "13", "Aluminio", "26,9815", "https://es.wikipedia.org/wiki/Aluminio"),
             new elements(actinidis, solid, "Am", "95", "Americio", "243", "https://es.wikipedia.org/wiki/Americio"),
