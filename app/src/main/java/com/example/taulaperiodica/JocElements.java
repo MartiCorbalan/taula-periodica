@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,12 +18,13 @@ public class JocElements extends AppCompatActivity {
     RadioButton resp1;
     RadioButton resp2;
     RadioButton resp3;
+
     Button corretgir;
     int puntuacio;
     int fallar;
 
     int respuesta ;
-
+    TextView puntuaciooooo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +35,11 @@ public class JocElements extends AppCompatActivity {
         resp1 = findViewById(R.id.resposta1);
         resp2 = findViewById(R.id.resposta2);
         resp3 = findViewById(R.id.resposta3);
+        puntuaciooooo = findViewById(R.id.puntuaciomaxima);
 
+        if (puntuacio==0){
+            puntuaciooooo.setText("Puntuació màxima: 0 " );
+        }
         mostrarInfo();
 
 
@@ -47,6 +53,13 @@ public class JocElements extends AppCompatActivity {
         });
 
 
+
+
+    }
+
+    public void grupobotones(){
+        RadioGroup desm=findViewById(R.id.grupo);
+        desm.clearCheck();
     }
 
     public void preguntes(){
@@ -82,7 +95,7 @@ public class JocElements extends AppCompatActivity {
                 }
             }
 
-
+        grupobotones();
             if (fallar != 0){
                 Toast.makeText(JocElements.this,"Molt be!! element encertat!!", Toast.LENGTH_SHORT).show();
             }else{
@@ -95,6 +108,7 @@ public class JocElements extends AppCompatActivity {
 
 
             }
+            puntuaciooooo.setText("Puntuació màxima: " + puntuacio);
         mostrarInfo();
     }
 
