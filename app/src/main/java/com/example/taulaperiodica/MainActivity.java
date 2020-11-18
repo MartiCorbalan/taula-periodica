@@ -476,6 +476,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.opcioJoc:
                 Intent intent = new Intent (MainActivity.this, JocElements.class);
                 startActivity(intent);
+                return  true;
         }
         return super.onOptionsItemSelected(item);
     }
